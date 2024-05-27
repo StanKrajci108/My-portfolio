@@ -120,6 +120,27 @@ h2 {
   font-style: italic;
 }
 
+.websites h2 {
+  background: linear-gradient(to top right, #1b0cec, #57cfff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tools h2 {
+  background: linear-gradient(to top right, #00784c, #6dfed5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.multimedia h2 {
+  background: linear-gradient(to top right, #d6000b, #ffb7b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 h3 {
   text-align: center;
   margin: 10px 0;
@@ -143,7 +164,7 @@ a {
   position: relative;
   padding: 40px;
   text-align: center;
-  z-index: 1; /* Ensure the content is above the pseudo-element */
+  z-index: 1;
 }
 
 .gradient::before {
@@ -153,17 +174,22 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: inherit; /* Match border-radius if any */
-  padding: 2px; /* Adjust to match the border width */
-  background: linear-gradient(to right, rgb(1, 18, 211), rgb(76, 237, 255));
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(to top right, rgb(1, 18, 211), rgb(76, 237, 255));
 
-  /* Standard property */
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude; /* Standard property */
+  mask-composite: exclude;
 
-  /* WebKit-specific property for compatibility */
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out; /* WebKit-specific property */
+  -webkit-mask-composite: destination-out;
+  z-index: -1;
+}
 
-  z-index: -1; /* Ensure the pseudo-element is behind the content */
+.g2::before {
+  background: linear-gradient(to top right, #00784c, #6dfed5);
+}
+
+.g3::before {
+  background: linear-gradient(to top right, #d6000b, #ffb7b7);
 }
