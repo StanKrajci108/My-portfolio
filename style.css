@@ -55,7 +55,6 @@ body {
   background-color: #2b2b2b;
   margin: 2rem 0;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .projectsLayout {
@@ -75,7 +74,7 @@ body {
   margin: 30px;
   align-items: center;
   background-color: #333333;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .projects {
@@ -102,6 +101,7 @@ img {
   margin-top: 2rem;
   gap: 10px;
   flex: 1;
+  border-bottom: 1px solid #717171;
 }
 
 h1 {
