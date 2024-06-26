@@ -225,11 +225,6 @@ a {
   transition: 0.8s ease;
 }
 
-.icon img {
-  width: 80%;
-  height: auto;
-}
-
 .contact-infoPhone,
 .contact-infoMail {
   position: absolute;
