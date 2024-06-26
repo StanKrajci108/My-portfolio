@@ -26,10 +26,9 @@ icons.forEach((icon) => {
 
 // Handle click events for the email link and phone numbers specifically
 document.addEventListener("click", function (event) {
-  const emailLink = event.target.closest(".contact-infoMail a");
+  const emailLink = event.target.closest(".contact-infoMail span");
   if (emailLink) {
     window.location.href = "mailto:" + emailLink.textContent;
-    return;
   }
 
   const phoneNumber = event.target.closest(".phone-number span");
